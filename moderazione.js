@@ -2,8 +2,7 @@ const Discord = require("discord.js")
 const client = new Discord.Client(
     {intents:["GUILDS","GUILD_MEMBERS","GUILD_MESSAGES"]}
 )
-/*const {MessageEmbed} = require('dicord.js');
-const db = require('quick.db');*/
+
 
 client.login(process.env.token)
 
