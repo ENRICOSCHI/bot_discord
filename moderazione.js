@@ -3,7 +3,6 @@ client.on("messageCreate", (message) =>{
     var parolacce=["cazzo", "merda","stronzo","fanculo","coglione","bimbominchia","porco", "dio", "madonna","negro"]
     var trovata= false;
     var testo = message.content;
-    //if(message.member.roles.cache.has("ID ruolo") return #se un ruolo non deve avere queste restrizioni
 
     parolacce.forEach(parola =>{
         if(message.content.includes(parola)){
