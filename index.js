@@ -34,7 +34,7 @@ client.on("messageCreate", (message) => {
 })
 
 
-/*//moderazione
+//moderazione
 client.on("messageCreate", (message) =>{
     var parolacce=["cazzo", "merda","stronzo","fanculo","coglione","bimbominchia","porco", "dio", "madonna","negro"]
     var trovata= false;
@@ -42,9 +42,14 @@ client.on("messageCreate", (message) =>{
 
     parolacce.forEach(parola =>{
         if(message.content.includes(parola)){
+            
             trovata= true;
             testo=testo.replace(eval(`/${parola}/g`),"###");
         }
+        else if (message.content.toLowerCase().includes(parola.toLowerCase())) {
+            trovata= true;
+            testo=testo.replace(eval(`/${parola}/g`),"###");
+            }
     })
     if(trovata){
         message.delete();
@@ -53,7 +58,7 @@ client.on("messageCreate", (message) =>{
             .setDescription("Hai scritto una parola vietata nella frase: " + testo)
         message.channel.send({embeds: [embed]})
     }
-})*/
+})
 
 
 

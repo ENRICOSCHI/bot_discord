@@ -1,4 +1,4 @@
-//moderazione
+/*//moderazione
 client.on("messageCreate", (message) =>{
     var parolacce=["cazzo", "merda","stronzo","fanculo","coglione","bimbominchia","porco", "dio", "madonna","negro"]
     var trovata= false;
@@ -24,4 +24,4 @@ client.on("messageCreate", (message) =>{
     }
 })
 
- //if(message.member.roles.cache.has("ID ruolo") return #se un ruolo non deve avere queste restrizioni
+ //if(message.member.roles.cache.has("ID ruolo") return #se un ruolo non deve avere queste restrizioni*/
