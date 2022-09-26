@@ -1,5 +1,5 @@
 //moderazione
-client.on("messageCreate", (message) =>{
+/*client.on("messageCreate", (message) =>{
     var parolacce=["cazzo", "merda","stronzo","fanculo","coglione","bimbominchia","porco", "dio", "madonna","negro"]
     var trovata= false;
     var testo = message.content;
@@ -10,7 +10,7 @@ client.on("messageCreate", (message) =>{
             testo=testo.replace(eval(`/${parola}/g`),"###");
         }
     })
-    
+
     if(trovata){
         message.delete();
         var embed= new Discord.MessageEmbed()
@@ -18,4 +18,4 @@ client.on("messageCreate", (message) =>{
             .setDescription("Hai scritto una parola vietata nella frase: " + testo)
         message.channel.send({embeds: [embed]})
     }
-})
+})*/
