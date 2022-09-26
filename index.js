@@ -28,14 +28,12 @@ client.on("messageCreate", (message) => {
    if(message.content == "ping!"){
     message.channel.send("pong!")
    }
-   if(message.content == "cazzo" || message.content=="Cazzo"|| message.content=="CAZZO"){
-    message.channel.send("ATTENZIONE NON SI DICONO PAROLACCE!!")
-}
+   /*if(message.content == "cazzo" || message.content=="Cazzo"|| message.content=="CAZZO"){
+    message.channel.send("ATTENZIONE NON SI DICONO PAROLACCE!!")*/
+
 })
 
-client.on(
-    
-)
+
 
 
 
