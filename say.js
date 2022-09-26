@@ -1,4 +1,4 @@
-module.exports = {
+/*module.exports = {
     name: 'say',
     description:' Say a message with the bot.',
 
@@ -18,4 +18,4 @@ module.exports = {
             message.channel.send(msg)
         }
     }
-}  
+}*/  
