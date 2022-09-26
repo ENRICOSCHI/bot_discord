@@ -31,7 +31,6 @@ client.on("messageCreate", (message) => {
    }
    /*if(message.content == "cazzo" || message.content=="Cazzo"|| message.content=="CAZZO"){
     message.channel.send("ATTENZIONE NON SI DICONO PAROLACCE!!")*/
-    
 })
 
 
