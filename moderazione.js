@@ -10,6 +10,7 @@ client.on("messageCreate", (message) =>{
             testo=testo.replace(eval(`/${parola}/g`),"###");
         }
     })
+    
     if(trovata){
         message.delete();
         var embed= new Discord.MessageEmbed()
