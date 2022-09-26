@@ -18,3 +18,5 @@ client.on("messageCreate", (message) =>{
         message.channel.send({embeds: [embed]})
     }
 })
+
+ //if(message.member.roles.cache.has("ID ruolo") return #se un ruolo non deve avere queste restrizioni
