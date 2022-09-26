@@ -10,7 +10,7 @@ client.on("messageCreate", (message) =>{
             testo=testo.replace(eval(`/${parola}/g`),"###");
         }
     })
-    if(trovata){
+    if(trovata= true){
         message.delete();
         var embed= new Discord.MessageEmbed()
             .setTitle("Hai detto una parola vietata nel server")
