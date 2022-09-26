@@ -13,7 +13,7 @@ client.on("ready",() =>{
 
 
 client.on("messageCreate", (message) =>{
-    var parolacce=["cazzo", "merda","stronzo","fanculo","coglione","bimbominchia","porco", "dio", "madonna"]
+    var parolacce=["cazzo", "merda","stronzo","fanculo","coglione","bimbominchia","porco", "dio", "madonna","negro"]
     var trovata= false;
 
     parolacce.forEach(parola =>{
