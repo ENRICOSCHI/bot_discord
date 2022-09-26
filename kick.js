@@ -1,4 +1,4 @@
-const {MessageEmbed} = require('dicord.js');
+/*const {MessageEmbed} = require('dicord.js');
 const db = require('quick.db');
 
 module.exports = {
@@ -25,4 +25,4 @@ module.exports = {
             user.send({embed: [embed]})//send a dm to the user that get warned
         });
     }
-};
+};*/

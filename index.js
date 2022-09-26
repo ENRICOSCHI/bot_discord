@@ -1,4 +1,5 @@
 const { Client } = require("discord.js")
+const { MembershipStates } = require("discord.js/typings/enums")
 const { ChalkAdvanced } = require('chalk-advanced');
 require("dotenv").config()
 const client = new Client(
@@ -34,10 +35,7 @@ client.on("messageCreate", (message) => {
    }
    /*if(message.content == "cazzo" || message.content=="Cazzo"|| message.content=="CAZZO"){
     message.channel.send("ATTENZIONE NON SI DICONO PAROLACCE!!")*/
-
 })
-
-
 
 
 
