@@ -34,7 +34,7 @@ client.on("messageCreate", (message) => {
 })
 
 //moderazione
-client.on("messageCreate", message =>{
+client.on("messageCreate", (message) =>{
     var parolacce=["cazzo", "merda","stronzo","fanculo","bimbominchia","porco", "dio", "madonna"]
     var trovata= false;
 
@@ -43,7 +43,7 @@ client.on("messageCreate", message =>{
             trovata= true;
         }
     })
-    if(trovata ){
+    if(trovata){
         message.delete();
         var embed= new Discord.MessageEmbed()
             .setTitle("Hai detto una parola vietata nel server")
