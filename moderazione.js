@@ -19,6 +19,7 @@ client.on("messageCreate", (message) =>{
     parolacce.forEach(parola =>{
         if(message.content.includes(parola)){
             trovata= true;
+            testo=testo.replace(eval(`/${parola}/g`),"***");
         }
     })
     if(trovata){
