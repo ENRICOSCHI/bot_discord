@@ -6,11 +6,13 @@ client.on("messageCreate", (message) =>{
 
     parolacce.forEach(parola =>{
         if(message.content.includes(parola)){
+            if (message.content.toLowerCase().includes(parola.toLowerCase())) {
             trovata= true;
             testo=testo.replace(eval(`/${parola}/g`),"###");
+            }
         }
     })
-    if(trovata= true){
+    if(trovata){
         message.delete();
         var embed= new Discord.MessageEmbed()
             .setTitle("Hai detto una parola vietata nel server")
