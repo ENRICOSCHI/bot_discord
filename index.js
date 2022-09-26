@@ -34,7 +34,7 @@ client.on("messageCreate", (message) => {
 })
 
 
-//moderazione
+/*//moderazione
 client.on("messageCreate", (message) =>{
     var parolacce=["cazzo", "merda","stronzo","fanculo","coglione","bimbominchia","porco", "dio", "madonna","negro"]
     var trovata= false;
@@ -53,7 +53,7 @@ client.on("messageCreate", (message) =>{
             .setDescription("Hai scritto una parola vietata nella frase: " + testo)
         message.channel.send({embeds: [embed]})
     }
-})
+})*/
 
 
 
