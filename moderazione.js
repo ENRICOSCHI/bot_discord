@@ -6,11 +6,14 @@ client.on("messageCreate", (message) =>{
 
     parolacce.forEach(parola =>{
         if(message.content.includes(parola)){
-            if (message.content.toLowerCase().includes(parola.toLowerCase())) {
+            
+            trovata= true;
+            testo=testo.replace(eval(`/${parola}/g`),"###");
+        }
+        else if (message.content.toLowerCase().includes(parola.toLowerCase())) {
             trovata= true;
             testo=testo.replace(eval(`/${parola}/g`),"###");
             }
-        }
     })
     if(trovata){
         message.delete();
