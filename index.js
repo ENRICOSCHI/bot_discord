@@ -32,6 +32,7 @@ client.on("messageCreate", (message) => {
     message.channel.send("ATTENZIONE NON SI DICONO PAROLACCE!!")*/
     var parolacce=["cazzo", "merda","stronzo","fanculo","coglione","bimbominchia","porco", "dio", "madonna","negro"]
     var trovata= false;
+    var testo = message.content;
 
     parolacce.forEach(parola =>{
         if(message.content.includes(parola)){
