@@ -35,7 +35,7 @@ client.on("messageCreate", (message) => {
 
 //moderazione
 client.on("messageCreate", (message) =>{
-    var parolacce=["cazzo", "merda","stronzo","fanculo","bimbominchia","porco", "dio", "madonna"]
+    var parolacce=["cazzo", "merda","stronzo","fanculo","coglione","bimbominchia","porco", "dio", "madonna"]
     var trovata= false;
 
     parolacce.forEach(parola =>{
