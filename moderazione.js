@@ -1,4 +1,4 @@
-/*//moderazione
+//moderazione
 client.on("messageCreate", (message) =>{
     var parolacce=["cazzo", "merda","stronzo","fanculo","coglione","bimbominchia","porco", "dio", "madonna","negro"]
     var trovata= false;
@@ -6,14 +6,9 @@ client.on("messageCreate", (message) =>{
 
     parolacce.forEach(parola =>{
         if(message.content.includes(parola)){
-            
             trovata= true;
             testo=testo.replace(eval(`/${parola}/g`),"###");
         }
-        else if (message.content.toLowerCase().includes(parola.toLowerCase())) {
-            trovata= true;
-            testo=testo.replace(eval(`/${parola}/g`),"###");
-            }
     })
     if(trovata){
         message.delete();
@@ -23,5 +18,3 @@ client.on("messageCreate", (message) =>{
         message.channel.send({embeds: [embed]})
     }
 })
-
- //if(message.member.roles.cache.has("ID ruolo") return #se un ruolo non deve avere queste restrizioni*/
